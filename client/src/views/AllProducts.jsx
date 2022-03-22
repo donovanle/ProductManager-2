@@ -22,7 +22,7 @@ const AllProducts = () => {
                     products.map((product, i)=>(
                         <p key={i}><Link to={`/products/${product._id}`}>{product.title}</Link></p>
                     )):
-                console.log("No Products")
+                    console.log("No Products")
             }
         </div>
     </div>

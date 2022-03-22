@@ -14,7 +14,8 @@ const CreateProduct = () => {
             .then(res=>{
                 history.push('/')
             })
-            .catch(err=>console.log(err))
+            .catch(err=>console.log(err));
+            window.location.reload(true);
     }
 
     return (

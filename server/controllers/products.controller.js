@@ -17,5 +17,5 @@ module.exports.allProducts = (req, res) => {
 module.exports.createProduct = (req, res) => {
     product.create(req.body)
         .then(product => res.json(product))
-        .catch(err => res.json(err))
+        .catch(err => res.status(400).json(err))
 }
